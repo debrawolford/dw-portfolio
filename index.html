@@ -1,87 +1,367 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Debra Wolford</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/stylesheet.css" type="text/css">
-    <script src="https://kit.fontawesome.com/7f61f2d383.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/stylesheet.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7f61f2d383.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Start of Navigation-->
     <header>
-        <nav class="nav flex-column">
-            <a class="nav-link" href="#intro"><i class="far fa-circle side-nav-link"></i><span
-                    class="d-none ml-2">Intro</span></a>
-            <a class="nav-link" href="#about"><i class="far fa-circle side-nav-link"></i><span
-                    class="d-none ml-2">About</span></a>
-            <a class="nav-link" href="#"><i class="far fa-circle side-nav-link"></i><span class="d-none ml-2">What I
-                    Do</span></a>
-            <a class="nav-link" href="#"><i class="far fa-circle side-nav-link"></i><span
-                    class="d-none ml-2">Experience</span></a>
-            <a class="nav-link" href="#"><i class="far fa-circle side-nav-link"></i><span
-                    class="d-none ml-2">Portfolio</span></a>
-            <a class="nav-link" href="#"><i class="far fa-circle side-nav-link"></i><span
-                    class="d-none ml-2">Contact</span></a>
-        </nav>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#intro"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">Intro</span></a
+        >
+        <a class="nav-link" href="#about"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">About Me</span></a
+        >
+        <a class="nav-link" href="#what-i-do"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">What I Do</span></a
+        >
+        <a class="nav-link" href="#experience"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">Experience</span></a
+        >
+        <a class="nav-link" href="#portfolio"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">Portfolio</span></a
+        >
+        <a class="nav-link" href="#contact"
+          ><i class="far fa-circle side-nav-link"></i
+          ><span class="d-none ml-2">Contact</span></a
+        >
+      </nav>
     </header>
     <!--End of Navigation-->
     <!--Start of Main Content -->
     <div class="container-fluid">
-        <!--Intro-->
-        <div class="row justify-content-center" id="landing-image">
-            <a name="intro"></a>
-            <div class="col-9 my-auto">
-                <p class="code-font mb-5">Hello! <span class="wiggle">&#128075;</span></p>
-                <p class="mt-5 mb-5 code-font">I'm <strong>Debra Wolford</strong>, a software engineer based in The
-                    Netherlands working
-                    on expanding my web
-                    development skills.</p>
-                <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Get In Touch</a>
-                <div class="text-center mb-0" id="learn-more"><a href="#about">Learn More<br><i
-                            class="fas fa-chevron-down"></i></a>
-                </div>
-            </div>
+      <!--Intro-->
+      <div class="row justify-content-center" id="landing-image">
+        <a name="intro"></a>
+        <div class="col-9 my-auto">
+          <p class="code-font mb-5">
+            Hello! <span class="wiggle">&#128075;</span>
+          </p>
+          <p class="mt-5 mb-5 code-font">
+            I'm <strong>Debra Wolford</strong>, a software developer based in
+            The Netherlands working on expanding my web development skills.
+          </p>
+          <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
+            >Get In Touch</a
+          >
+          <div class="text-center mb-0" id="learn-more">
+            <a href="#about"
+              >Learn More<br /><i class="fas fa-chevron-down"></i
+            ></a>
+          </div>
         </div>
-        <!--About-->
-        <div class="row mt-5 justify-content-center">
-            <a name="about"></a>
-            <div class="col-9 col-md-5 align-self-center order-md-last">
-                <img src="static/images/dw-pic.jpeg" class="img-thumbnail" id="profile-pic" alt="Debra Wolford">
-            </div>
-            <div class="col-9 col-md-5 my-auto">
-                <h2>About</h2>
-                <hr>
-                <p>I have recently finished the Code Institute Full Stack Web Developer course and am
-                    able to build fully responsive websites using HTML, CSS, Javascript and Python. Some of the
-                    larger libraries and frameworks I have experience with are Bootstrap, Django and jQuery.</p>
-                <p>In my current role I mainly work with HTML and CSS to build fundraising appeals and donation pages
-                    within Engaging Networks for a large animal rights organization. In the past year I have assisted
-                    the online fundraising department in achieving multiple record income months and consistently
-                    staying over budget throughout 2020.</p>
-                <p>When I'm not on my computer you'll most likely find me trying out new vegan junk food recipes,
-                    spending time with my dog, playing a variety of video games on my Nintendo Switch, or weightlifting
-                    at the gym.</p>
-            </div>
-
+      </div>
+      <!--About-->
+      <div class="row mt-5 justify-content-center">
+        <a name="about"></a>
+        <div class="col-10 col-md-5 align-self-center order-md-last">
+          <img
+            src="static/images/dw-pic.jpeg"
+            class="img-thumbnail"
+            id="profile-pic"
+            alt="Debra Wolford"
+          />
         </div>
-
+        <div class="col-10 col-md-5 my-auto">
+          <h2>About Me</h2>
+          <hr />
+          <p>
+            I have recently finished the Code Institute Full Stack Web Developer
+            course and am able to build fully responsive websites using HTML,
+            CSS, Javascript and Python. Some of the larger libraries and
+            frameworks I have experience with are Bootstrap, Django and jQuery.
+          </p>
+          <p>
+            In my current role I mainly work with HTML and CSS to build
+            fundraising appeals and donation pages within Engaging Networks for
+            a large animal rights organization. In the past year I have assisted
+            the online fundraising department in achieving multiple record
+            income months and consistently staying over budget throughout 2020.
+          </p>
+          <p>
+            When I'm not on my computer you'll most likely find me trying out
+            new vegan junk food recipes, spending time with my dog, playing a
+            variety of video games on my Nintendo Switch, or weightlifting at
+            the gym.
+          </p>
+          <hr />
+          <div class="row mt-4 justify-content-center text-center">
+            <div class="col-5">
+              <h4>Where I've Worked</h4>
+              <img
+                src="static/images/peta.jpg"
+                alt="PETA"
+                class="img-thumbnailmb-1"
+              />
+            </div>
+            <div class="col-5">
+              <h4>Where I've Studied</h4>
+              <img
+                src="static/images/ci-logo.jpg"
+                alt="Code Institute"
+                class="img-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--What I Do-->
+      <div class="row mt-5 justify-content-center pb-5" id="what-i-do">
+        <div class="col-10 mt-5">
+          <a name="what-i-do"></a>
+          <h2>What I do</h2>
+          <hr />
+        </div>
+        <div class="col-10 col-md-5">
+          <h4><i class="fas fa-laptop-code"></i> Front End</h4>
+          <p>
+            I have basic working knowledge in User Experience Design using the
+            trinity of HTML/CSS/Javascript. I have also built multiple websites
+            using Bootstrap.
+          </p>
+        </div>
+        <div class="col-10 col-md-5">
+          <h4><i class="fas fa-database"></i> Back End</h4>
+          <p>
+            I have some experience in data-driven web applications and am
+            currently working on expanding my knowledge. I have used Python and
+            Django in conjunction with MongoDB to process and present
+            information.
+          </p>
+        </div>
+      </div>
+      <!-- Experience-->
+      <div class="row mt-2 justify-content-center">
+        <div class="col-10 mt-5">
+          <a name="experience"></a>
+          <h2>Experience</h2>
+          <hr />
+          <p>
+            I've been learning web development for over about a year and a half
+            now and am excited to continue expanding my knowledge by working on
+            new projects.
+          </p>
+        </div>
+        <div class="col-5 col-md-3">
+          <h4>Languages</h4>
+          <p>
+            HTML5<br />
+            CSS3<br />
+            Javascript<br />
+            Python<br />
+            Jinja2
+          </p>
+        </div>
+        <div class="col-5 col-md-3">
+          <h4>Frameworks</h4>
+          <p>
+            Bootstrap<br />
+            Django<br />
+            JQuery<br />
+            Flask
+          </p>
+        </div>
+        <div class="col-5 col-md-3">
+          <h4>Tools</h4>
+          <p>
+            MongoDB<br />
+            Heroku<br />
+            Git<br />
+            Stripe
+          </p>
+        </div>
+      </div>
+      <!--Resume-->
+      <div class="row mt-2 pb-4 justify-content-center" id="resume">
+        <div class="col-10 text-center">
+          <h4 class="my-4">Download My Full CV</h4>
+          <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
+            >English</a
+          >
+          <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
+            >Dutch</a
+          >
+        </div>
+      </div>
+      <!-- Portfolio -->
+      <div class="row mt-2 justify-content-center">
+        <div class="col-10 mt-5">
+          <a name="experience"></a>
+          <h2>Portfolio</h2>
+          <hr />
+          <p>
+            I've been learning web development for over about a year and a half
+            now and am excited to continue expanding my knowledge by working on
+            new projects.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-10 col-md-5" id="v-choco">
+          <div class="content">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="static/images/v-choco-ss.png" />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">
+                <a
+                  type="button"
+                  href="https://vchoco.herokuapp.com/"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-search-plus"></i> Live Site
+                </a>
+                <a
+                  type="button"
+                  href="https://github.com/debrawolford/v-choco"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-code"></i> Code
+                </a>
+              </h3>
+            </div>
+          </div>
+          <hr />
+          <p class="mt-2">
+            A fully functional e-commerce store that accepts payments using
+            Stripe, allows users to create accounts, and perform all CRUD
+            functions. Data is managed using PostgreSQL. Languages used were
+            HTML, CSS, JS, and Python/Django.
+          </p>
+        </div>
+        <div class="col-10 col-md-5">
+          <div class="content">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="static/images/plant-swap-ss.png" />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">
+                <a
+                  type="button"
+                  href="https://plant-swap-ci.herokuapp.com/"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-search-plus"></i> Live Site
+                </a>
+                <a
+                  type="button"
+                  href="https://github.com/debrawolford/plant-swap"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-code"></i> Code
+                </a>
+              </h3>
+            </div>
+          </div>
+          <hr />
+          <p class="mt-2">
+            A full-stack website that allows users to create accounts, and
+            perform all CRUD functions. Data is managed using MongoDB. Languages
+            used were HTML, CSS, JS, and Python.
+          </p>
+        </div>
+        <div class="col-10 col-md-5">
+          <div class="content">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="static/images/animal-quiz-ss.png" />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">
+                <a
+                  type="button"
+                  href="https://debrawolford.github.io/animal-quiz/"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-search-plus"></i> Live Site
+                </a>
+                <a
+                  type="button"
+                  href="https://github.com/debrawolford/animal-quiz"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-code"></i> Code
+                </a>
+              </h3>
+            </div>
+          </div>
+          <hr />
+          <p class="mt-2">
+            An interactive quiz created using HTML, CSS and JS.
+          </p>
+        </div>
+        <div class="col-10 col-md-5">
+          <div class="content">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="static/images/treat-your-pup-ss.png"
+            />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">
+                <a
+                  type="button"
+                  href="https://debrawolford.github.io/treat-your-pup/"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-search-plus"></i> Live Site
+                </a>
+                <a
+                  type="button"
+                  href="https://github.com/debrawolford/treat-your-pup"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                >
+                  <i class="fas fa-code"></i> Code
+                </a>
+              </h3>
+            </div>
+          </div>
+          <hr />
+          <p class="mt-2">
+            A simple front-end website with a mobile-first fully responsive
+            design using HTML, CSS, and Bootstrap.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- End of Main Content -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="static/js/script.js"></script>
-</body>
-
+  </body>
 </html>

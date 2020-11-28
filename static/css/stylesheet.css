@@ -1,81 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
-/* Sitewide Styling */ 
+/* Sitewide Styling */
 body,
 html {
-    min-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-  }
+  font-family: "Poppins", sans-serif;
+}
 
-/* Navbar */ 
+/* Navbar */
 
 nav {
-    background-color: transparent;
-    position: fixed;
-    top: 40%;
+  background-color: transparent;
+  position: fixed;
+  top: 40%;
 }
 
 .nav-link {
-    color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-    color: #000000;
+  color: #000000;
 }
 
-h2 {
-    font-family: 'Courier Prime', monospace;
+h2,
+h3,
+h4 {
+  font-family: "Courier Prime", monospace;
+}
+
+/* Buttons */
+.btn {
+  color: #000000;
+  border-color: #000000;
+  font-family: "Courier Prime", monospace;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Landing Area */
 #landing-image {
-    height: 100vh;
-    background-image: url("../images/landing-image.jpg");
-    background-size: cover;
-    background-position: center center;
-    max-width: 100%;
-    font-family: 'Courier Prime', monospace;
+  height: 100vh;
+  background-image: url("../images/landing-image.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  font-family: "Courier Prime", monospace;
 }
 
 @media (min-width: 576px) {
-    #landing-image {
-        font-size: x-large;
-    }
+  #landing-image {
+    font-size: x-large;
+  }
 }
 
 @media (min-width: 768px) {
-    #landing-image {
-        font-size: xx-large;
-    }
-}
-
-#landing-image .btn {
-    color: #000000;
-    border-color: #000000;
-}
-
-#landing-image .btn:hover {
-    background-color:rgba(0, 0, 0, 0.3);  
+  #landing-image {
+    font-size: xx-large;
+  }
 }
 
 #learn-more {
-    font-size: medium;
+  font-size: medium;
 }
 #learn-more a {
-    color: #000000;
+  color: #000000;
 }
 
 #learn-more a:hover {
-    color: rgba(0, 0, 0, 0.3);;
-    text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
-/* About Area */ 
+/* About Area */
 
 #profile-pic {
-    border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* What I Do Area */
+
+#what-i-do {
+  background-image: url("../images/what-i-do-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+}
+
+/* Resume */
+
+#resume {
+  background-color: #fcdce4;
+}
+
+/* Portfolio */
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(252, 220, 228, 0.8);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details {
+  color: #000000;
+}
+
+.fadeIn-bottom {
+  top: 80%;
 }
