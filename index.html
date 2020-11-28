@@ -16,14 +16,12 @@
       src="https://kit.fontawesome.com/7f61f2d383.js"
       crossorigin="anonymous"
     ></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
 
   <body>
     <!--Start of Navigation-->
     <header>
-      <nav class="nav flex-column">
+      <nav class="nav flex-column d-none d-lg-block">
         <a class="nav-link" href="#intro"
           ><i class="far fa-circle side-nav-link"></i
           ><span class="d-none ml-2">Intro</span></a
@@ -36,9 +34,9 @@
           ><i class="far fa-circle side-nav-link"></i
           ><span class="d-none ml-2">What I Do</span></a
         >
-        <a class="nav-link" href="#experience"
+        <a class="nav-link" href="#skills"
           ><i class="far fa-circle side-nav-link"></i
-          ><span class="d-none ml-2">Experience</span></a
+          ><span class="d-none ml-2">Skills</span></a
         >
         <a class="nav-link" href="#portfolio"
           ><i class="far fa-circle side-nav-link"></i
@@ -64,7 +62,10 @@
             I'm <strong>Debra Wolford</strong>, a software developer based in
             The Netherlands working on expanding my web development skills.
           </p>
-          <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
+          <a
+            class="btn btn-outline-secondary btn-lg"
+            href="mailto:debra.wolford@gmail.com"
+            role="button"
             >Get In Touch</a
           >
           <div class="text-center mb-0" id="learn-more">
@@ -114,7 +115,7 @@
               <img
                 src="static/images/peta.jpg"
                 alt="PETA"
-                class="img-thumbnailmb-1"
+                class="img-thumbnail mb-1"
               />
             </div>
             <div class="col-5">
@@ -153,11 +154,11 @@
           </p>
         </div>
       </div>
-      <!-- Experience-->
+      <!-- Skills-->
       <div class="row mt-2 justify-content-center">
         <div class="col-10 mt-5">
-          <a name="experience"></a>
-          <h2>Experience</h2>
+          <a name="skills"></a>
+          <h2>Skills</h2>
           <hr />
           <p>
             I've been learning web development for over about a year and a half
@@ -197,7 +198,8 @@
       <!--Resume-->
       <div class="row mt-2 pb-4 justify-content-center" id="resume">
         <div class="col-10 text-center">
-          <h4 class="my-4">Download My Full CV</h4>
+          <h3 class="mt-4">Download My Full CV</h3>
+          <h4><i class="fas fa-download"></i></h4>
           <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
             >English</a
           >
@@ -209,7 +211,7 @@
       <!-- Portfolio -->
       <div class="row mt-2 justify-content-center">
         <div class="col-10 mt-5">
-          <a name="experience"></a>
+          <a name="portfolio"></a>
           <h2>Portfolio</h2>
           <hr />
           <p>
@@ -351,7 +353,61 @@
         </div>
       </div>
     </div>
+    <!-- Contact -->
+    <div class="row mt-5 justify-content-center" id="contact">
+      <div class="col-10 text-center mt-5">
+        <a name="contact"></a>
+        <h2>Get In Touch</h2>
+        <h3><i class="far fa-paper-plane"></i></h3>
+        <p>Have a project in mind? Let's work together!</p>
+        <a
+          class="btn btn-outline-secondary btn-lg my-4"
+          href="mailto:debra.wolford@gmail.com"
+          role="button"
+          >Say Hello</a
+        >
+      </div>
+      <!--Back to Top Button-->
+      <button onclick="topFunction()" id="backToTop" title="Back to Top">
+        &#x261d; &#xfe0f;
+      </button>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-10 text-center mt-5">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.facebook.com/debra.wolford.5"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+                ><span class="sr-only">Facebook</span></a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/debra-wolford-821b52142"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ><span class="sr-only">LinkedIn</span></a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://github.com/debrawolford"
+                ><i class="fa fa-github" aria-hidden="true"></i
+                ><span class="sr-only">GitHub</span></a
+              >
+            </li>
+          </ul>
+          <p>&copy; Debra Wolford 2020</p>
+        </div>
+      </div>
+    </footer>
     <!-- End of Main Content -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

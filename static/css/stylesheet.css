@@ -18,6 +18,7 @@ nav {
   background-color: transparent;
   position: fixed;
   top: 40%;
+  font-family: "Courier Prime", monospace;
 }
 
 .nav-link {
@@ -112,7 +113,7 @@ h4 {
 .content .content-overlay {
   background: rgba(252, 220, 228, 0.8);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -161,4 +162,41 @@ h4 {
 
 .fadeIn-bottom {
   top: 80%;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #fcdce4;
+}
+
+/* Footer */
+
+footer a {
+  font-size: x-large;
+  color: #000000;
+}
+
+footer a:hover {
+  color: #fcdce4;
+}
+
+/* Back to top button, addapted from W3Schools */
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+@media (min-width: 576px) {
+  #backToTop {
+    font-size: 50px;
+  }
 }
