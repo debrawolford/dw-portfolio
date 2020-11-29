@@ -52,7 +52,7 @@ h4 {
   background-image: url("../images/landing-image.jpg");
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
+  min-width: 100%;
   font-family: "Courier Prime", monospace;
 }
 
@@ -92,7 +92,7 @@ h4 {
   background-image: url("../images/what-i-do-bg.jpg");
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 /* Resume */
